@@ -4,21 +4,81 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
+    <!-- favicon Just have it be  fancy D like Udemy in red
+    
+    https://fonts.google.com/specimen/Gugi?preview.text=D%20F&preview.text_type=custom&preview.size=128
+
+    https://fonts.google.com/specimen/Long+Cang?preview.text=%20%E5%AD%A6&preview.text_type=custom&preview.size=128#standard-styles 
+    -->
+
+    <!-- icons  -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+    />
+    <!--  -->
+
     <title>Portfolio</title>
   </head>
   <body>
     <h1>Portfolio</h1>
     <div class="nav">Menu</div>
-    <div class="banner">Banner</div>
-    <div class="me">About me</div>
-    <hr>
-    <div class="skills">Skills</div>
-    <hr>
-    <div class="projects">Link Projects</div>
-    <hr>
-    <div class="contact-me">Contact Me</div>
-    <div class="footer">Footer ==> copyright 2020</div>
+    <!-- a png image of my self and something witty or an if statement like Udemy -->
 
-    <script src="/style/app.js"></script>
+    <a href="https://colorhunt.co/palette/202087"> <p>Color scheme</p> </a>
+    <div class="banner">Banner (image of me or workstation)</div>
+    <div class="me">About me</div>
+    <hr />
+    <div class="skills">
+      Skills
+      <p>List development skills</p>
+      <ul>
+        <!-- have a tap men for selection across the screen top under banner
+                on click then transform the screen size 
+            maybe use the resize css function to do it -->
+
+        <!-- link to resizing code 
+            https://codepen.io/trilogic/pen/EKjGpJ
+           -->
+        <li>desktop Icon: Office View</li>
+        <li>Laptop Icon: Starbucks Friendly</li>
+        <li>Tablet Icon: Ultimate Frisbee Maybe?</li>
+        <li>Cellphone Icon: Mobile Ready</li>
+      </ul>
+    </div>
+
+    
+    <!-- resize  -->
+
+    <div id="device">
+      <ul class="resize">
+        <li id="btndesktop"><i class="fa fa-desktop"></i></li>
+        <li id="btntablet"><i class="fa fa-tablet"></i></li>
+        <li id="btnphone"><i class="fa fa-mobile"></i></li>
+      </ul>
+      <div id="wrapper">
+        <h1>Text</h1>
+      </div>
+    </div>
+    <!-- end of it -->
+
+    
+    <hr />
+    <div class="projects">
+      Link Projects
+      <p>Cards with 5 projects</p>
+    </div>
+    <hr />
+    <div class="contact-me">
+      Contact Me (have it be a form that slides down when you click on contact
+      me)
+    </div>
+    <div class="footer">
+      Footer ==> copyright 2020
+      <div class="social-links">Linked link and gitHub link</div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+    <script src="style/app.js"></script>
   </body>
 </html>
