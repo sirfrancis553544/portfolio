@@ -15,14 +15,22 @@ body {
 }
 
 #device {
-  text-align: center;
+  display: contents;
   background: #eee;
   width: 100%;
   height: 100%;
+  position: absolute;
 }
-
+.resize {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100px;
+}
 ul.resize {
-  display: inline-block;
+  height: 40px;
+  border: 3px solid green;
+  /* position: relative;
+  padding:5%; */
 }
 
 ul.resize li {
@@ -37,18 +45,30 @@ ul.resize li {
 }
 
 #wrapper {
+  overflow-wrap: break-word;
+  overflow: auto;
+
   margin-left: auto;
   margin-right: auto;
-  background: #ccc;
+  background: rgb(173, 0, 0);
+  /* background: #ccc; */
   width: 100%;
   text-align: left;
 }
 
-@media screen and (max-width: 500px) {
-    /* ul.resize #btndesktop{
+@media screen and (max-width: 875px) {
+  /* ul.resize #btndesktop{
         display: none;
       }   */
-      ul.resize #btndesktop{
-        display: none;
-      }
+  ul.resize #btndesktop {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 585px) {
+  /* ul.resize #btndesktop{
+          display: none;
+        }   */
+  ul.resize #btntablet {
+    display: none !important;
+  }
 }
