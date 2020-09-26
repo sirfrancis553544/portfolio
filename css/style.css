@@ -62,6 +62,7 @@ ul.resize li {
       }   */
   ul.resize #btndesktop {
     display: none !important;
+  
   }
 }
 @media screen and (max-width: 585px) {
@@ -69,6 +70,6 @@ ul.resize li {
           display: none;
         }   */
   ul.resize #btntablet {
-    display: none !important;
+    display: none !important; 
   }
 }
